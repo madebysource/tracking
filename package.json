@@ -1,0 +1,22 @@
+{
+  "name": "tracking",
+  "version": "0.0.1",
+  "description": "Smart repository for tracking management",
+  "devDependencies": {
+    "uglify-js": "~2.4.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "./node_modules/.bin/uglifyjs 1/all.js -o 1/all.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LeZuse/tracking.git"
+  },
+  "author": "Tomas Ruzicka <tomasruzicka@abdoc.net> (https://github.com/LeZuse)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeZuse/tracking/issues"
+  },
+  "homepage": "https://github.com/LeZuse/tracking"
+}

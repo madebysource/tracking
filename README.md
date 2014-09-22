@@ -7,6 +7,7 @@
 `npm run prepublish`
 
 ## Usage in pages
+Put this script right before the `</body>` tag:  
 `<script src="//lezuse.github.io/tracking/1/all.min.js"></script>`
 
 ## Facebook Custom Audience

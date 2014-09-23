@@ -1,3 +1,5 @@
+// https://github.com/segmentio/analytics.js/blob/master/lib/analytics.js
+// http://cdn.segment.io/analytics.js/v1/md8a5a8iah/analytics.js
 (function() {
 var oldonload = window.onload;
 window.onload = function() {
@@ -25,10 +27,22 @@ var google_remarketing_only = true;
 var oldonload = window.onload;
 window.onload = function() {
   var tag = document.createElement('script');
-  // tag.src = '//www.googleadservices.com/pagead/conversion.js';
-  tag.innerHTML = 'document.write(\'<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>\');';
+  tag.async = true;
+  // https://github.com/thirdpartyjs/thirdpartyjs-code/blob/master/examples/templates/02/loading-files/index.html
+  var onload = function() {
+    if (window.google_trackConversion) {
+      window.google_trackConversion();
+    }
+  };
+  if (tag.addEventListener)
+    tag.addEventListener('load', onload, false);
+  else {
+    tag.attachEvent('onreadystatechange', function() {
+      if (/complete|loaded/.test(tag.readyState)) onload();
+    });
+  }
+  tag.src = '//www.googleadservices.com/pagead/conversion_async.js';
   var s = document.getElementsByTagName('head')[0];
-  // document.write('<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>');
   s.appendChild(tag);
   if(oldonload) {oldonload()};
 };

@@ -1,6 +1,6 @@
 {
   "name": "tracking",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Smart repository for tracking management",
   "devDependencies": {
     "uglify-js": "~2.4.15"

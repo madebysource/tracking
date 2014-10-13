@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/LeZuse/tracking.git"
+    "url": "git://github.com/madebysource/tracking.git"
   },
   "author": "Tomas Ruzicka <tomasruzicka@abdoc.net> (https://github.com/LeZuse)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LeZuse/tracking/issues"
+    "url": "https://github.com/madebysource/tracking/issues"
   },
-  "homepage": "https://github.com/LeZuse/tracking"
+  "homepage": "https://github.com/madebysource/tracking"
 }

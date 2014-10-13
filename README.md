@@ -8,7 +8,7 @@
 
 ## Usage in pages
 Put this script right before the `</body>` tag:  
-`<script src="//lezuse.github.io/tracking/1/all.min.js"></script>`
+`<script src="//madebysource.github.io/tracking/1/all.min.js"></script>`
 
 ## Facebook Custom Audience
 - Help: https://developers.facebook.com/docs/reference/ads-api/custom-audience-website-faq/
